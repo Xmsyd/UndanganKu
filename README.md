@@ -27,7 +27,7 @@ Kami sangat menghargai kontribusi dari komunitas untuk mengembangkan Undanganku 
 
 ## Kontak
 
-Jika Anda memiliki pertanyaan atau ingin menghubungi kami, jangan ragu untuk mengirimkan email ke [kontak@undanganku.com](mailto:kontak@undanganku.com).
+Jika Anda memiliki pertanyaan atau ingin menghubungi kami, jangan ragu untuk mengirimkan email ke [xdmsad@gmail.com](mailto:xdmsad@gmail.com).
 
 Terima kasih telah tertarik dengan proyek Undanganku! Kami harap platform ini dapat membantu banyak pasangan dalam merayakan momen istimewa mereka.
 
