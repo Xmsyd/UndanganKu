@@ -1,0 +1,79 @@
+:root {
+     --blue: #116D6E;
+     --bg:     #C8AE7D;
+     --shadow: 0 2px 2px rgba(0, 0, 0, 0.5); 
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 2000px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/foto3.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: blur(2.7px);
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h2, .hero h3, .hero h4 {
+    text-shadow: var(--shadow);
+ }
+
+.hero h3 {
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 5.2rem;
+}
+
+.hero a {
+    color: var(--blue );
+    background-color: white;
+    text-shadow: var(--shadow);    
+}
+
+.hero a:hover {
+    color: white;
+    background-color: var(--blue);
+}
+
+/* media query start */
+/* Laptop Start */
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+}
+/* Laptop End */
+
+
+/* Tablet Start */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+/* Tablet End */
+
+
+/* HP Start */
+@media (max-width: 576px) {
+    html {
+        font-size: 60%;
+    }
+}
+/* HP End */
+
+/* media query end */
