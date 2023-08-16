@@ -13,7 +13,9 @@
     <!-- Fonts Google Start -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Montserrat:wght@100;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Montserrat:wght@100;400;600&display=swap"
+        rel="stylesheet">
     <!-- Fonts Google End -->
 
     <!-- MyCSS Link Start  -->
@@ -24,47 +26,30 @@
 <body>
 
     <!-- Navbar Section Start -->
-    <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Offcanvas navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Undangan-ku</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Undangan-ku</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#paket">Design</a>
+                        <a class="nav-link" href="#">Price</a>
+                        <a class="nav-link" href="#">About</a>
+                      </div>
+                </div>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
         </div>
-      </nav>
+    </nav>
     <!-- Navbar Section End -->
 
     <!-- Hero Section Start -->
@@ -78,6 +63,56 @@
         </main>
     </section>
     <!-- Hero Section End -->
+
+    <!-- feature Section Start -->
+    <section id="feature pt-5">
+        <div class="container">
+            <div class="row text-center pt-4">
+                <div class="col">
+                    <h2>feature</h2>
+                </div>
+            </div>
+            <!-- row feature start -->
+            
+            <div class="row pt-5">
+                <div class="col-3">
+                    <div class="card" style="width: 12rem;">
+                        <img src="img/icon feature/graphic-design.png" class="card-img-top p-5" alt="Cover Undangan">
+                        <div class="card-body">
+                          <p class="card-text text-center">Custom Cover Undangan</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width: 12rem;">
+                        <img src="img/icon feature/user.png" class="card-img-top p-5" alt="Cover Undangan">
+                        <div class="card-body">
+                          <p class="card-text text-center">Custom Nama Tamu</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width: 12rem;">
+                        <img src="img/icon feature/team.png" class="card-img-top p-5" alt="Cover Undangan">
+                        <div class="card-body">
+                          <p class="card-text text-center">Unlimited Tamu Undangan</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width: 12rem;">
+                        <img src="img/icon feature/playlist.png" class="card-img-top p-5" alt="Cover Undangan">
+                        <div class="card-body">
+                          <p class="card-text text-center">Musik Latar</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <!-- row feature end -->
+
+        </div>
+    </section>
+    <!-- feature Section End -->
 
 
 
