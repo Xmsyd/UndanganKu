@@ -17,7 +17,7 @@ Undanganku adalah platform yang memungkinkan pasangan memilih, menyesuaikan, dan
 
 ## Cara Memulai
 
-1. **Klon Repositori**: `git clone https://github.com/namapengguna/undanganku.git`
+1. **Klon Repositori**: `git clone https://github.com/Xmsyd/undanganku.git`
 2. **Buka Folder**: `cd undanganku`
 3. **Buka Index.html**: Buka file `index.html` untuk menjalankan proyek di browser.
 
