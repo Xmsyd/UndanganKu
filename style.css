@@ -10,6 +10,7 @@ body {
     min-height: 2000px;
 }
 
+/* Section Hero Start */
 .hero::before {
     content: '';
     position: absolute;
@@ -48,6 +49,20 @@ body {
     color: white;
     background-color: var(--blue);
 }
+/* Section Hero End */
+
+/* Section Feature Start */
+.feature {
+    font-size: 0.9rem;
+}
+
+.feature h5 {
+    font-weight: bold;
+    font-size: 1rem;
+}
+/* Section Feature End */
+
+
 
 /* media query start */
 /* Laptop Start */
