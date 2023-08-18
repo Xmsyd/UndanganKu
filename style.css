@@ -1,5 +1,9 @@
 :root {
-     --blue: #116D6E;
+     --main: #FFB6C1;
+     --secd:   #E6BE8A;
+     --thrd:    #333333;
+     --frth:    #666666;
+     --opsi:    #E6E6FA;
      --bg:     #C8AE7D;
      --shadow: 0 2px 2px rgba(0, 0, 0, 0.5); 
 }
@@ -10,6 +14,13 @@ body {
     min-height: 2000px;
 }
 
+/* Navbar Start */
+nav .navbar.navbar-expand-lg.bg-body-tertiary {
+    background-color: var(--main);
+}
+
+/* Navbar End */
+
 /* Section Hero Start */
 .hero::before {
     content: '';
@@ -18,11 +29,10 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(img/foto3.png);
+    background-image: url(img/foto4.jfif);
     background-size: cover;
     background-position: center;
     z-index: -1;
-    filter: blur(2.7px);
 }
 
 .hero {
@@ -40,14 +50,14 @@ body {
 }
 
 .hero a {
-    color: var(--blue );
+    color: var(--main );
     background-color: white;
     text-shadow: var(--shadow);    
 }
 
 .hero a:hover {
     color: white;
-    background-color: var(--blue);
+    background-color: var(--main);
 }
 /* Section Hero End */
 
