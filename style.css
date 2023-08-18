@@ -15,10 +15,15 @@ body {
 }
 
 /* Navbar Start */
-nav .navbar.navbar-expand-lg.bg-body-tertiary {
-    background-color: var(--main);
+.mynavbar{
+    background-color: var(--main) !important;
+    opacity: 50%;
+    backdrop-filter: blur(4px);
 }
 
+.mynavbar .offcanvas{
+    height: 100vh;
+}
 /* Navbar End */
 
 /* Section Hero Start */
@@ -38,6 +43,7 @@ nav .navbar.navbar-expand-lg.bg-body-tertiary {
 .hero {
     position: relative;
     min-height: 100vh;
+    margin-top: -15px;
 }
 
 .hero h2, .hero h3, .hero h4 {
