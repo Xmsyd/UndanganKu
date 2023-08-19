@@ -16,13 +16,18 @@ body {
 
 /* Navbar Start */
 .mynavbar{
-    background-color: var(--main) !important;
-    opacity: 50%;
+    background-color: var(--opsi) !important;
     backdrop-filter: blur(4px);
+    z-index: 1000;
 }
 
 .mynavbar .offcanvas{
     height: 100vh;
+}
+
+.transparent-bg {
+    background-color: transparent !important;
+    backdrop-filter: none !important;
 }
 /* Navbar End */
 
@@ -43,7 +48,6 @@ body {
 .hero {
     position: relative;
     min-height: 100vh;
-    margin-top: -15px;
 }
 
 .hero h2, .hero h3, .hero h4 {
@@ -57,12 +61,12 @@ body {
 
 .hero a {
     color: var(--main );
-    background-color: white;
+    background-color: var(--opsi);
     text-shadow: var(--shadow);    
 }
 
 .hero a:hover {
-    color: white;
+    color: var(--opsi);
     background-color: var(--main);
 }
 /* Section Hero End */
