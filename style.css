@@ -15,20 +15,37 @@ body {
 }
 
 /* Navbar Start */
-.mynavbar{
-    background-color: var(--opsi) !important;
-    backdrop-filter: blur(4px);
+/* .mynavbar{
+    /* background-color: var(--opsi) !important;
+    backdrop-filter: blur(4px); 
     z-index: 1000;
-}
+} */
 
 .mynavbar .offcanvas{
     height: 100vh;
 }
 
-.transparent-bg {
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--secd);
+    text-shadow: var(--shadow);
+}
+
+.mynavbar .nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--opsi);
+    text-shadow: var(--shadow);
+}
+
+/* .transparent-bg {
     background-color: transparent !important;
     backdrop-filter: none !important;
-}
+} */
+
 /* Navbar End */
 
 /* Section Hero Start */
@@ -90,6 +107,11 @@ body {
     html {
         font-size: 75%;
     }
+/* 
+    .mynavbar .nav-link {
+    color: var(--opsi);
+    text-shadow: var(--shadow);
+    } */
 }
 /* Laptop End */
 
@@ -98,6 +120,14 @@ body {
 @media (max-width: 768px) {
     html {
         font-size: 62.5%;
+    }
+
+    .mynavbar .nav-link {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: var(--thrd);
+        text-shadow: var(--shadow);
+        text-align: center;
     }
 }
 /* Tablet End */
