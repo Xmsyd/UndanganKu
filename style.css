@@ -88,6 +88,18 @@ body {
 }
 /* Section Hero End */
 
+/* Section Service Start */
+.service {
+    background-color: var(--opsi);;
+}
+
+.service h2 {
+    margin-top: -6rem;
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 4.8rem;
+}
+/* Section Service End */
+
 /* Section Feature Start */
 .feature {
     font-size: 0.9rem;
