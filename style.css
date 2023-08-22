@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Flow+Rounded&family=Nunito&display=swap');
+
 :root {
      --main: #FFB6C1;
      --secd:   #E6BE8A;
@@ -5,7 +7,11 @@
      --frth:    #666666;
      --opsi:    #E6E6FA;
      --bg:     #C8AE7D;
-     --shadow: 0 2px 2px rgba(0, 0, 0, 0.5); 
+     --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+     
+    --ff-cursive: 'Monsieur La Doulaise', cursive;
+    --ff-cursive-soft: 'Courgette', cursive;
+    --bg-img-hero: url(img/hero.png);
 }
 
 body {
@@ -14,12 +20,16 @@ body {
     min-height: 2000px;
 }
 
+::selection{
+    background-color: var(--main);
+}
+
 /* Navbar Start */
-/* .mynavbar{
-    /* background-color: var(--opsi) !important;
-    backdrop-filter: blur(4px); 
-    z-index: 1000;
-} */
+.mynavbar{
+    /* background-color: var(--opsi) !important; */
+    backdrop-filter: blur(4px);
+    background-color: #ffffff62;
+}
 
 .mynavbar .offcanvas{
     height: 100vh;
@@ -27,14 +37,13 @@ body {
 
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
-    font-family: 'Monsieur La Doulaise', cursive;
+    font-family: var(--ff-cursive);
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: bolder;
     color: var(--secd);
-    text-shadow: var(--shadow);
 }
 
-.mynavbar .nav-link {
+.mynavbar .nav-link{
     font-weight: 600;
     text-transform: uppercase;
     color: var(--opsi);
@@ -46,6 +55,31 @@ body {
     backdrop-filter: none !important;
 } */
 
+.navbar-nav.account{
+    gap: 1rem;
+    align-items: center;
+}
+
+a#sign-in{
+    --color-text: var(--main);
+    --color-bg: white;
+}
+a#sign-up{
+    --color-text: white;
+    --color-bg: var(--main);
+}
+.navbar-nav.account a{
+    height: auto;
+    padding: 3px 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+
+    text-shadow: none;
+    border-radius: 5px;
+}
+
 /* Navbar End */
 
 /* Section Hero Start */
@@ -56,46 +90,55 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(img/foto4.jfif);
+    background-image: var(--bg-img-hero);
     background-size: cover;
     background-position: center;
     z-index: -1;
 }
+
 
 .hero {
     position: relative;
     min-height: 100vh;
 }
 
-.hero h2, .hero h3, .hero h4 {
+.hero h2, .hero h3, .hero h4, .hero p{
     text-shadow: var(--shadow);
  }
 
+.hero h2 {
+    font-family: var(--ff-cursive-soft);
+}
+
 .hero h3 {
-    font-family: 'Monsieur La Doulaise', cursive;
     font-size: 5.2rem;
 }
 
-.hero a {
-    color: var(--main );
-    background-color: var(--opsi);
-    text-shadow: var(--shadow);    
+.hero p{
+    text-decoration: underline var(--main) wavy;
+    text-decoration-skip-ink: none;
 }
 
-.hero a:hover {
+.hero a#action-btn{
+    padding: 10px 20px !important;  
+    box-shadow: 0px 3px 0px 2px var(--main);
+    color: var(--main );
+    background-color: white;
+}
+
+.hero a#action-btn:hover {
     color: var(--opsi);
     background-color: var(--main);
 }
 /* Section Hero End */
 
 /* Section Service Start */
-.service {
+#service {
     background-color: var(--opsi);;
 }
 
-.service h2 {
-    margin-top: -6rem;
-    font-family: 'Monsieur La Doulaise', cursive;
+#service h2 {
+    font-family: var(--ff-cursive);
     font-size: 4.8rem;
 }
 /* Section Service End */
